@@ -1,0 +1,149 @@
+extends layout
+
+block content
+  .blog
+    // container
+    .container
+      .blog-heading
+        h2.wow.fadeInDown.animated(data-wow-delay='.5s') Blog
+        p.wow.fadeInUp.animated(data-wow-delay='.5s')
+          | Vivamus efficitur scelerisque nulla nec lobortis. Nullam ornare metus vel dolor feugiat maximus.Aenean nec nunc et metus volutpat dapibus ac vitae ipsum. Pellentesque sed rhoncus nibh
+      .blog-top-grids
+        .col-md-8.blog-top-left-grid
+          .left-blog
+            .blog-left
+              .blog-left-left.wow.fadeInUp.animated(data-wow-delay='.5s')
+                p
+                  | Posted By 
+                  a(href='#') Admin
+                  |     on June 2, 2016    
+                  a(href='#') Comments (10)
+                a(href='/single')
+                  img(src='./img/8.jpg', alt='')
+              .blog-left-right.wow.fadeInUp.animated(data-wow-delay='.5s')
+                a(href='/single') Phasellus ultrices tellus eget ipsum ornare molestie 
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed blandit massa vel mauris sollicitudin
+                  | dignissim. Phasellus ultrices tellus eget ipsum ornare molestie scelerisque eros dignissim. Phasellus
+                  | fringilla hendrerit lectus nec vehicula. ultrices tellus eget ipsum ornare consectetur adipiscing elit.Sed blandit .
+                  | estibulum aliquam neque nibh, sed accumsan nulla ornare sit amet.
+              .clearfix  
+            .blog-left
+              .blog-left-left.wow.fadeInUp.animated(data-wow-delay='.5s')
+                p
+                  | Posted By 
+                  a(href='#') Admin
+                  |     on June 2, 2016    
+                  a(href='#') Comments (10)
+                a(href='/single')
+                  img(src='./img/g3.jpg', alt='')
+              .blog-left-right.wow.fadeInUp.animated(data-wow-delay='.5s')
+                a(href='/single') Phasellus ultrices tellus eget ipsum ornare molestie
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed blandit massa vel mauris sollicitudin
+                  | dignissim. Phasellus ultrices tellus eget ipsum ornare molestie scelerisque eros dignissim. Phasellus
+                  | fringilla hendrerit lectus nec vehicula. ultrices tellus eget ipsum ornare consectetur adipiscing elit.Sed blandit .
+                  | estibulum aliquam neque nibh, sed accumsan nulla ornare sit amet.
+              .clearfix  
+            .blog-left
+              .blog-left-left.wow.fadeInUp.animated(data-wow-delay='.5s')
+                p
+                  | Posted By 
+                  a(href='#') Admin
+                  |     on June 2, 2016    
+                  a(href='#') Comments (10)
+                a(href='/single')
+                  img(src='./img/g2.jpg', alt='')
+              .blog-left-right.wow.fadeInUp.animated(data-wow-delay='.5s')
+                a(href='/single') Phasellus ultrices tellus eget ipsum ornare molestie
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed blandit massa vel mauris sollicitudin
+                  | dignissim. Phasellus ultrices tellus eget ipsum ornare molestie scelerisque eros dignissim. Phasellus
+                  | fringilla hendrerit lectus nec vehicula. ultrices tellus eget ipsum ornare consectetur adipiscing elit.Sed blandit .
+                  | estibulum aliquam neque nibh, sed accumsan nulla ornare sit amet.
+              .clearfix  
+          nav
+            ul.pagination.wow.fadeInUp.animated(data-wow-delay='.5s')
+              li
+                a(href='#', aria-label='Previous')
+                  span(aria-hidden='true') «
+              li
+                a(href='#') 1
+              li
+                a(href='#') 2
+              li
+                a(href='#') 3
+              li
+                a(href='#') 4
+              li
+                a(href='#') 5
+              li
+                a(href='#', aria-label='Next')
+                  span(aria-hidden='true') »
+        .col-md-4.blog-top-right-grid
+          .Categories.wow.fadeInUp.animated(data-wow-delay='.5s')
+            h3 Categories
+            ul
+              li
+                a(href='#') Phasellus sem leo, interdum quis risus
+              li
+                a(href='#') Nullam egestas nisi id malesuada aliquet 
+              li
+                a(href='#')  Donec condimentum purus urna venenatis
+              li
+                a(href='#') Ut congue, nisl id tincidunt lobor mollis
+              li
+                a(href='#') Cum sociis natoque penatibus et magnis
+              li
+                a(href='#') Suspendisse nec magna id ex pretium
+          .Categories.wow.fadeInUp.animated(data-wow-delay='.5s')
+            h3 Archive
+            ul.marked-list.offs1
+              li
+                a(href='#') May 2016 (7)
+              li
+                a(href='#') April 2016 (11)
+              li
+                a(href='#') March 2016 (12)
+              li
+                a(href='#') February 2016 (14)
+              li
+                a(href='#') January 2016 (10)
+              li
+                a(href='#') December 2016 (12)
+              li
+                a(href='#') November 2016 (8)
+              li
+                a(href='#') October 2016 (7)
+              li
+                a(href='#') September 2016 (8)
+              li
+                a(href='#') August 2016 (6)
+          .comments
+            h3.wow.fadeInUp.animated(data-wow-delay='.5s') Recent Comments
+            .comments-text.wow.fadeInUp.animated(data-wow-delay='.5s')
+              .col-md-3.comments-left
+                img(src='./img/t1.jpg', alt='')
+              .col-md-9.comments-right
+                h5 Admin
+                a(href='#') Phasellus sem leointerdum risus
+                p March 16,2016 6:09:pm
+              .clearfix  
+            .comments-text.wow.fadeInUp.animated(data-wow-delay='.5s')
+              .col-md-3.comments-left
+                img(src='./img/t2.jpg', alt='')
+              .col-md-9.comments-right
+                h5 Admin
+                a(href='#') Phasellus sem leointerdum risus
+                p March 16,2016 6:09:pm
+              .clearfix  
+            .comments-text.wow.fadeInUp.animated(data-wow-delay='.5s')
+              .col-md-3.comments-left
+                img(src='./img/t3.jpg', alt='')
+              .col-md-9.comments-right
+                h5 Admin
+                a(href='#') Phasellus sem leointerdum risus
+                p March 16,2016 6:09:pm
+              .clearfix  
+        .clearfix  
+    // //container

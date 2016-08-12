@@ -1,0 +1,152 @@
+extends layout
+
+block content
+    .banner
+      .slider
+        h2.wow.shake.animated(data-wow-delay='.5s') Trip
+        .border
+        script(src='./js/responsiveslides.min.js')
+        script.
+          // You can also use "$(window).load(function() {"
+          $(function () {
+          // Slideshow 4
+          $("#slider3").responsiveSlides({
+          auto: true,
+          pager: true,
+          nav: true,
+          speed: 500,
+          namespace: "callbacks",
+          before: function () {
+          $('.events').append("<li>before event fired.</li>");
+          },
+          after: function () {
+          $('.events').append("<li>after event fired.</li>");
+          }
+          });
+          });
+        #top.callbacks_container-wrap
+          ul#slider3.rslides
+            li
+              .slider-info
+                h3.wow.fadeInRight.animated(data-wow-delay='.5s') Lorem ipsum dolor sit amet
+                p.wow.fadeInLeft.animated(data-wow-delay='.5s') Curabitur eget metus eget erat vehicula semper vitae sed leo
+                .more-button.wow.fadeInRight.animated(data-wow-delay='.5s')
+                  a(href='single.html') Click Here  
+            li
+              .slider-info
+                h3 Consectetur adipiscing elit
+                p Quisque nisl risus, egestas in convallis vitae, fringilla cursus magna
+                .more-button
+                  a(href='single.html') Read More 
+            li
+              .slider-info
+                h3 Proin eget consequat ante  
+                p  Suspendisse bibendum dictum metus, at finibus elit dignissim nec 
+                .more-button
+                  a(href='single.html') Click Here  
+    // //banner
+    // banner-bottom
+    .banner-bottom
+      .container
+        .banner-bottom-grids
+          .col-md-6.banner-bottom-left.wow.fadeInLeft.animated(data-wow-delay='.5s')
+            .left-border
+              .left-border-info
+                p Duis dapibus lacinia libero at aliquam
+          .col-md-6.banner-bottom-left.banner-bottom-right.wow.fadeInRight.animated(data-wow-delay='.5s')
+            .left-border
+              .left-border-info.right-border-info
+                p Duis dapibus lacinia libero at aliquam
+          .clearfix  
+    // //banner-bottom
+    // information
+    .information
+      .container
+        .information-heading
+          h3.wow.fadeInDown.animated(data-wow-delay='.5s') Why Book With Us
+          p.wow.fadeInUp.animated(data-wow-delay='.5s')
+            | Vivamus efficitur scelerisque nulla nec lobortis. Nullam ornare metus vel dolor feugiat maximus.Aenean nec nunc et metus volutpat dapibus ac vitae ipsum. Pellentesque sed rhoncus nibh
+        .information-grids
+          .col-md-4.information-grid.wow.fadeInLeft.animated(data-wow-delay='.5s')
+            .information-info
+              .information-grid-img
+                img(src='./img/8.jpg', alt='')
+              .information-grid-info
+                h4 Sollicitudin sit amet 
+                p
+                  | Duis dapibus lacinia libero at aliquam. Sed pulvinar, magna vitae consectetur ultricies, augue massa condimentum eros non luctus ipsum lacus interdum odio.
+          .col-md-4.information-grid.wow.fadeInUp.animated(data-wow-delay='.5s')
+            .information-info
+              .information-grid-info
+                h4 Consectetur ultricies
+                p
+                  | Duis dapibus lacinia libero at aliquam. Sed pulvinar, magna vitae consectetur ultricies, augue massa condimentum eros non luctus ipsum lacus interdum odio.
+              .information-grid-img
+                img(src='./img/3.jpg', alt='')
+          .col-md-4.information-grid.wow.fadeInRight.animated(data-wow-delay='.5s')
+            .information-info
+              .information-grid-img
+                img(src='./img/7.jpg', alt='')
+              .information-grid-info
+                h4 Nullam ornare metus
+                p
+                  | Duis dapibus lacinia libero at aliquam. Sed pulvinar, magna vitae consectetur ultricies, augue massa condimentum eros non luctus ipsum lacus interdum odio.
+          .clearfix  
+    // //information
+    // popular
+    .popular
+      .container
+        .popular-heading.information-heading
+          h3.wow.fadeInDown.animated(data-wow-delay='.5s') Popular Places
+          p.wow.fadeInUp.animated(data-wow-delay='.5s')
+            | Vivamus efficitur scelerisque nulla nec lobortis. Nullam ornare metus vel dolor feugiat maximus.Aenean nec nunc et metus volutpat dapibus ac vitae ipsum. Pellentesque sed rhoncus nibh
+        .popular-slide
+          script.
+            // You can also use "$(window).load(function() {"
+            $(function () {
+            // Slideshow 4
+            $("#slider1").responsiveSlides({
+            auto: true,
+            pager: true,
+            nav: false,
+            speed: 500,
+            namespace: "callbacks",
+            before: function () {
+            $('.events').append("<li>before event fired.</li>");
+            },
+            after: function () {
+            $('.events').append("<li>after event fired.</li>");
+            }
+            });
+            });
+          #top.callbacks_container-wrap
+            ul#slider1.rslides
+              li
+                .popular-slide-info.wow.bounceIn.animated(data-wow-delay='.5s')
+                  h4 Australia
+                  p
+                    | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas volutpat lacus at enim aliquet, quis iaculis nisi bibendum. Nullam cursus arcu lobortis, pharetra augue et, dignissim nunc. Morbi vestibulum tempus orci at faucibus. Sed ultricies dignissim magna tristique interdum
+              li
+                .popular-slide-info.popular-slide1
+                  h4 Philippines
+                  p
+                    | Habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas volutpat lacus at enim aliquet, quis iaculis nisi bibendum. Nullam cursus arcu lobortis, pharetra augue et, dignissim nunc. Morbi vestibulum tempus orci at faucibus. Sed ultricies dignissim magna tristique interdum Pellentesque
+              li
+                .popular-slide-info.popular-slide2
+                  h4 Maldives
+                  p
+                    | Tristique senectus pellentesque habitant morbi et netus et malesuada fames ac turpis egestas. Maecenas volutpat lacus at enim aliquet, quis iaculis nisi bibendum. Nullam cursus arcu lobortis, pharetra augue et, dignissim nunc. Morbi vestibulum tempus orci at faucibus. dignissim magna tristique interdum Sed ultricies
+        .popular-grids
+          .col-md-4.popular-grid.wow.fadeInLeft.animated(data-wow-delay='.5s')
+            h5 Nullam convallis sagittis
+            p
+              | Donec malesuada ultricies metus ac vehicula. Nullam convallis sagittis tellus ut dictum. Proin risus lacus, sollicitudin sit amet ante ac, dapibus convallis ipsum.
+          .col-md-4.popular-grid.wow.fadeInUp.animated(data-wow-delay='.5s')
+            h5 Proin risus lacus
+            p
+              | Donec malesuada ultricies metus ac vehicula. Nullam convallis sagittis tellus ut dictum. Proin risus lacus, sollicitudin sit amet ante ac, dapibus convallis ipsum.
+          .col-md-4.popular-grid.wow.fadeInRight.animated(data-wow-delay='.5s')
+            h5 Sollicitudin sit amet ante
+            p
+              | Donec malesuada ultricies metus ac vehicula. Nullam convallis sagittis tellus ut dictum. Proin risus lacus, sollicitudin sit amet ante ac, dapibus convallis ipsum.
+          .clearfix  

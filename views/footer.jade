@@ -1,0 +1,66 @@
+footer
+  .footer
+    .container
+      .footer-grids
+        .col-md-3.footer-nav.wow.fadeInLeft.animated(data-wow-delay='.5s')
+          h4 Navigation
+          ul
+            li
+              a(href='/about') About
+            li
+              a(href='/gallery1') Gallery
+            li
+              a(href='/blog') Blog
+            li
+              a(href='/contact') Contact
+        .col-md-5.footer-nav.wow.fadeInUp.animated(data-wow-delay='.5s')
+          h4 Newsletter
+          p
+            | Nunc non feugiat quam, vitae placerat ipsum. Cras at felis congue, volutpat neque eget
+          form
+            input#mc4wp_email(type='email', name='EMAIL', placeholder='Enter your email here', required='')
+            input(type='submit', value='Subscribe')
+        .col-md-4.footer-nav.wow.fadeInRight.animated(data-wow-delay='.5s')
+          h4 Latest News
+          .news-grids
+            .news-grid
+              h6
+                | 09/01/2016 : 
+                a(href='/single') Cras at felis congue
+              h6
+                | 13/07/2016 : 
+                a(href='/single') Volutpat neque eget
+              h6
+                | 13/02/2016 : 
+                a(href='/single') Agittis tellus ut dictum
+              h6
+                | 28/11/2016 : 
+                a(href='/single') Habitant morbi et netus
+              h6
+                | 19/01/2016 : 
+                a(href='/single') pellentesque habitant morbi
+              h6
+                | 23/02/2016 : 
+                a(href='/single') Maecenas volutpat lacus
+        .clearfix  
+      .copyright.wow.fadeInUp.animated(data-wow-delay='.5s')
+        p
+          | © 2016 Around . All Rights Reserved
+!= js()
+script(src='./js/bootstrap.js')
+script(type='text/javascript', src='./js/move-top.js')
+script(type='text/javascript', src='./js/easing.js')
+script(type='text/javascript').
+  jQuery(document).ready(function($) {
+  $(".scroll").click(function(event){
+    event.preventDefault();
+  $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+  });
+  });
+script(src='./js/wow.min.js')
+script.
+  new WOW().init();
+if _path == "/gallery1.html"
+  script(src='./js/lightbox-plus-jquery.min.js')
+if _path == "/gallery2.html"
+  script(src='./js/lightbox-plus-jquery.min.js')

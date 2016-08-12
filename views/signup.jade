@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  .login
+      .container
+          .login-body
+            .login-heading
+              h1 Sign up
+            | &#x9;&#x9;&#x9;&#x9;
+            .login-info
+              form
+                input.user(type='text', name='email', placeholder='Name', required='')
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                input.user(type='text', name='email', placeholder='Email', required='')
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                input.lock(type='password', name='password', placeholder='Password')
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                input.lock(type='password', name='password', placeholder='Confirm Password')
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                input(type='submit', name='Sign In', value='Sign up')
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                .signup-text
+                  a(href='login.html') Already have an account? Login here.
